@@ -1,4 +1,4 @@
-package org.java17.amigoscode.functional;
+package org.java17.streams.functional;
 
 import java.util.Objects;
 import java.util.function.Consumer;

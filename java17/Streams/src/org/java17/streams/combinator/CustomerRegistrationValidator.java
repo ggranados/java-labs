@@ -1,9 +1,9 @@
-package org.java17.amigoscode.combinator;
+package org.java17.streams.combinator;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Function;
-import static org.java17.amigoscode.combinator.CustomerRegistrationValidator.ValidationResult.*;
+import static org.java17.streams.combinator.CustomerRegistrationValidator.ValidationResult.*;
 
 public interface CustomerRegistrationValidator
         extends Function <Customer, CustomerRegistrationValidator.ValidationResult> {

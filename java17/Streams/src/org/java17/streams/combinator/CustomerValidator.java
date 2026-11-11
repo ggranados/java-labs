@@ -1,4 +1,4 @@
-package org.java17.amigoscode.combinator;
+package org.java17.streams.combinator;
 
 import java.time.LocalDate;
 import java.time.Period;

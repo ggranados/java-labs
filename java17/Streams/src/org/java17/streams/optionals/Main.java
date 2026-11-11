@@ -1,4 +1,4 @@
-package org.java17.amigoscode.optionals;
+package org.java17.streams.optionals;
 
 import java.util.Optional;
 

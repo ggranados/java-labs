@@ -1,10 +1,10 @@
-package org.java17.amigoscode.basic;
+package org.java17.streams.basic;
 
-import org.java17.amigoscode.pojo.*;
+import org.java17.streams.pojo.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import static org.java17.amigoscode.pojo.Person.*;
+import static org.java17.streams.pojo.Person.*;
 
 public class BasicStreamSamples {
 
