@@ -9,9 +9,9 @@ Not one app: a monorepo of independent Java self-study/practice projects (Intell
 | Module | Build | Notes |
 |---|---|---|
 | `java17/Algorithms` | Maven, Java 17, JUnit 5 + log4j, Spring Boot parent | sort algorithms (`insert`, `merge`) behind `Sorter` interface; each has an `.md` explainer; `SortPerformanceTest` compares them |
-| `java17/JavaExercises`, `java17/RemoveDuplicates`, `java17/Stack` | Maven (17 / 17 / 11), JUnit 5 | small exercises |
+| `java17/JavaExercises`, `java17/RemoveDuplicates`, `java17/Stack` | Maven (17 / 17 / 11), JUnit 5 | small exercises; `Stack` pom targets 11 despite folder |
 | `java8/jersey-basic-rest` | Maven, WAR, Java 8, Jersey + Lombok + javafaker | needs servlet container |
-| `java9/FunctionalProgramming`, `java17/Streams`, `java17/DesignPatterns`, `java17/AnnotatiosSample`, `java11/OCPJava11StudyGuide` | none (plain `src/`, IntelliJ only) | compile with `javac`/IntelliJ; OCP code under `cert.java11.ocp.chapterNN` |
+| `java9/FunctionalProgramming`, `java17/Streams`, `java17/DesignPatterns`, `java17/AnnotatiosSample`, `java11/OCPJava11StudyGuide` | none (plain `src/`, IntelliJ only) | compile with `javac`/IntelliJ; OCP code under `cert.java11.ocp.chapterNN`; Streams code under `org.java17.streams.*` (has `.vscode/launch.json`); `AnnotatiosSample` has no branch, version assumed 17 |
 | `java21/Algorithmia` | none (plain dirs, JDK 21, branch `java21/algorithmia`) | **different purpose** - see below |
 
 ## Commands
@@ -36,3 +36,5 @@ No lint config. Module Java versions differ (8–21); check the module's POM/`.i
 
 - Package roots: `edu.ggranados.java.*` (own code), `org.linkedinlearning.*` (course follow-along), `udemy.*`, `cert.java11.ocp.*`.
 - Branches follow `javaNN/topic[/sub]` (e.g. `java21/algorithmia`, `java17/exercises`), merged to `master`.
+- Folder layout mirrors the branch's version prefix: a module from branch `javaNN/...` lives at `javaNN/<ModuleName>/`. New module: create it under the matching `javaNN/` folder, never at repo root.
+- `.gitignore` uses `**/out` and `**/target`, so build output is ignored at any depth.
