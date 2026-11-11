@@ -24,6 +24,6 @@ hs_err_pid*
 
 #intelliJ
 *.idea
-*/out
-*/target
+**/out
+**/target
 Sandbox/*
